@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>ATL HUB-01 STATISTICS</title>
+            <meta name="application-name" content="netdata">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="apple-mobile-web-app-capable" content="yes">
+            <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">   
+        </head>
+            <script>
+                var netdataTheme = 'slate';
+            </script>
+
+            <script
+                type="text/javascript" src="dashboard.js?v20170724-7">
+            </script>
+
+	      <script>
+                var update_always = 'true';
+            </script>
+
+            <script>
+                // always update the charts, even if focus is lost
+                   NETDATA.options.current.stop_updates_when_focus_is_lost = false;
+
+                   var RELOAD_EVERY = 120;
+                   setTimeout(function(){
+                   location.reload();
+                   }, RELOAD_EVERY * 60 * 1000);
+            </script>
+
+        <body>
+            <img src="GE_Logo.png" style="width:350px; height:80px;">
+
+            
+            <div style="width: 50%; height: 60px; text-align: center ; 
+                        color:#05FFA1;; font-family: geneva ;font-variant: small-caps;
+                        display:inline-block">
+                <font size="+4"><b>Atlanta, GA Hub 1 [ATL-01] </b> </font>
+            </div>
+
+            <div style="width: 49%; display: inline-block; color: #F9D62E; height: 105px">
+                <div data-netdata="net.ens192"
+                     data-title="PORT CHANNEL 1 TRAFFIC"
+                     data-chart-library="dygraph"
+                     data-width="100%" 
+                     data-height="400%"
+                     data-after="-300"
+                     data-colors="#3366FF" 
+                ></div>
+            </div>             
+
+            <div style="width: 49%; display: inline-block; color: #F9D62E; height:105px;">
+                <div data-netdata="net.ens224"
+                        
+                     data-title="PORT CHANNEL 2 TRAFFIC"
+                     data-chart-library="dygraph"
+                     data-width="100%"
+                     data-height="400%"
+                     data-after="-300"
+                     data-colors="#3366FF" 
+                ></div>
+            </div>
+
+            <div style="width: 49%; display: inline-block; color: #00f9ff; height:80px;">
+                <div data-netdata="ipv4.errors"
+                     data-title="TOTAL NETWORK ERRORS"
+                     data-chart-library="dygraph"
+                     data-width="100%"
+                     data-height="200%"
+                     data-after="-300"
+                     data-colors="#FE0000" 
+                ></div>
+            </div>
+
+            <div style="width: 49%; display: inline-block; color: #00f9ff; height:80px;">
+                <div data-netdata="ipv4.tcpsock"   
+                     data-title="TOTAL ESTABLISHED TCP CONNECTIONS"
+                     data-chart-library="dygraph"
+                     data-width="100%"
+                     data-height="200%"
+                     data-after="-300"
+                     data-colors="#FE0000" 
+                ></div>
+            </div>
+
+            <div style="width: 49%; display: inline-block; color: #F9D62E; height:95px;">
+                <div data-netdata="net_packets.ens192"
+                     data-title="PORT CHANNEL 1 PACKETS PER SECOND"
+                     data-chart-library="dygraph"
+                     data-width="100%"
+                     data-height="300%"
+                     data-after="-300"
+                ></div>
+            </div>
+
+            <div style="width: 49%; display: inline-block; color: #F9D62E; height:95px;">
+                <div data-netdata="net_packets.ens224"
+                        
+                     data-title="PORT CHANNEL 2 PACKETS PER SECOND"
+                     data-chart-library="dygraph"
+                     data-width="100%"
+                     data-height="300%"
+                     data-after="-300"
+                ></div>
+            </div>
+<!--
+            <div style="width: 49%; text-align: center; display: inline-block; color: #F9D62E; padding-top: 20px;">
+                <div data-netdata="net.ens192"
+                        data-dimensions="received"
+                        data-title="Port Channel 1 RX"
+                        data-chart-library="easypiechart"
+                        data-width="15%"
+                        data-height="15%"
+                        data-after="-300"
+                        data-colors="#3366FF" 
+                ></div>
+                <div data-netdata="net.ens192"
+                        data-dimensions="sent"
+                        data-title="Port Channel 1 TX"
+                        data-chart-library="easypiechart"
+                        data-width="15%"
+                        data-height="15%"
+                        data-after="-300"
+                        data-colors="#028900"
+                ></div>
+            </div>
+
+            <div style="width: 49%; text-align: center; color: #F9D62E; padding-top: 20px;  display: inline-block;">
+                <div data-netdata="net.ens224"
+                        data-dimensions="received"
+                        data-title="Port Channel 2 RX"
+                        data-chart-library="easypiechart"
+                        data-width="15%"
+                        data-height="15%"
+                        data-after="-300"
+                        data-colors="#3366FF"
+                ></div>
+                <div data-netdata="net.ens224"
+                        data-dimensions="sent"
+                        data-title="Port Channel 2 TX"
+                        data-chart-library="easypiechart"
+                        data-width="15%"
+                        data-height="15%"
+                        data-after="-300"
+                        data-colors="#028900"
+                ></div>
+            </div> 
+        -->
+        </body>
+</html>
